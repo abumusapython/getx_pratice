@@ -14,6 +14,7 @@ class HeightWidthSnackbar extends StatelessWidget {
             Get.snackbar(
               'Getx title',
               "Getx message",
+              snackPosition: SnackPosition.BOTTOM,
               backgroundColor: Colors.green,
               borderWidth: 2,
               borderColor: Colors.deepOrange,
