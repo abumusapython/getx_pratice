@@ -9,10 +9,21 @@ class HeightWidthSnackbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          color: Colors.red,
-          height: Get.height * 0.5,
-          width: Get.width * 0.5,
+        child: GestureDetector(
+          onDoubleTap: () {
+            Get.snackbar(
+              'Getx title',
+              "Getx message",
+              backgroundColor: Colors.green,
+              borderWidth: 2,
+              borderColor: Colors.deepOrange,
+            );
+          },
+          child: Container(
+            color: Colors.red,
+            height: Get.height * 0.5,
+            width: Get.width * 0.5,
+          ),
         ),
       ),
     );
