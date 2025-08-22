@@ -15,14 +15,14 @@ class RouteNavigate extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Get.to(() => RouteNavigate2());
+                Get.offAll(() => RouteNavigate2());
               },
               child: Text("Got to 2"),
             ),
             SizedBox(height: Get.height * 0.03),
             ElevatedButton(
               onPressed: () {
-                Get.offAll(() => RouteNavigate3());
+                Get.to(() => RouteNavigate3());
               },
               child: Text("Go to Page 3"),
             ),
