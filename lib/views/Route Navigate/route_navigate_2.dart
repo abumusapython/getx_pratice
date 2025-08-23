@@ -21,7 +21,7 @@ class RouteNavigate2 extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                Get.to(() => RouteNavigate3());
+                Get.to(() => RouteNavigate3(title: "This is page 2"));
               },
               child: Text("Go to 3"),
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_pratice/views/Route%20Navigate/route_navigate.dart';
+import 'package:getx_pratice/views/routing/lgoin_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: RouteNavigate(),
+      home: LgoinScreen(),
     );
   }
 }
