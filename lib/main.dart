@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_pratice/views/routing/lgoin_screen.dart';
+import 'package:getx_pratice/views/routing/screen_one.dart';
+import 'package:getx_pratice/views/routing/screen_two.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: LgoinScreen(),
+      initialRoute: "/screenOne",
+      getPages: [
+        GetPage(name: "/screenOne", page: () => ScreenOne()),
+        GetPage(name: "/screenTwo", page: () => ScreenTwo()),
+      ],
     );
   }
 }
