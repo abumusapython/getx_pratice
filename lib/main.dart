@@ -4,8 +4,7 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:get/utils.dart';
 import 'package:getx_pratice/views/app%20them/app_them_controller.dart';
-import 'package:getx_pratice/views/image%20picker/image_picker_home.dart';
-import 'package:getx_pratice/views/routing/screen_two.dart';
+import 'package:getx_pratice/views/counter%20app/counter_home.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,11 +29,8 @@ class MyApp extends StatelessWidget {
             ? ThemeMode.dark
             : ThemeMode.light,
 
-        initialRoute: "/screenOne",
-        getPages: [
-          GetPage(name: "/screenOne", page: () => ImagePickerHome()),
-          GetPage(name: "/screenTwo", page: () => ScreenTwo()),
-        ],
+        initialRoute: "/counter_app",
+        getPages: [GetPage(name: "/counter_app", page: () => CounterHome())],
       ),
     );
   }
