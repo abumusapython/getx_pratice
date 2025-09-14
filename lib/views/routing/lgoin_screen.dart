@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:get/utils.dart';
-import 'package:getx_pratice/views/routing/forgate_screen.dart';
 
 class LgoinScreen extends StatelessWidget {
   const LgoinScreen({super.key});
